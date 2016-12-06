@@ -8,7 +8,8 @@
 Module.register("wifistrength",{
 	defaults: {
 		device: 'wlan0',
-		reloadInterval: 100000
+		reloadInterval: 120000,
+		size: 40
 	},
 
 	getScripts: function() {
@@ -54,6 +55,11 @@ Module.register("wifistrength",{
 	getDom: function() {
 		var wrapper = document.createElement("div");
 		wrapper.className = 'wrapper';
+
+		wrapper.style.width = this.config.size + "px";
+		wrapper.style.height = this.config.size + "px";
+		wrapper.style.backgroundSize = "auto " + this.config.size + "px";
+
 		if (this.loaded) {
 			var strength = 0; // 0 - 3
 			if (this.signalStrength > -67) {
