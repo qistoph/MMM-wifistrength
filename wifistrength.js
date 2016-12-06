@@ -43,7 +43,6 @@ Module.register("wifistrength",{
 			}
 
 			this.updateDom();
-			this.show();
 		} else if(notification === "FETCH_ERROR") {
 			Log.error("WifiStrength error. Could not fetch strength: ", payload);
 		} else {
@@ -65,8 +64,11 @@ Module.register("wifistrength",{
 				strength = 1;
 			}
 			wrapper.style.backgroundPositionX = (strength * 100 / 3) + "%"; 
+
+			this.show();
 		} else {
-			wrapper.innerText = 'Loading...';
+			wrapper.innerText = '...';
+			wrapper.style.backgroundPositionX = "200%";
 		}
 		return wrapper;
 	},
