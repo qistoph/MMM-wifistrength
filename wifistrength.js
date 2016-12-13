@@ -1,4 +1,4 @@
-/* global Module */
+/* global Module, Log */
 
 /* Magic Mirror
  * Module: wifistrength
@@ -7,7 +7,7 @@
 
 Module.register("wifistrength",{
 	defaults: {
-		device: 'wlan0',
+		device: "wlan0",
 		reloadInterval: 120000,
 		size: 40
 	},
@@ -17,7 +17,7 @@ Module.register("wifistrength",{
 	},
 
 	getStyles: function() {
-		return ['wifistrength.css'];
+		return ["wifistrength.css"];
 	},
 
 	init: function() {
@@ -54,7 +54,7 @@ Module.register("wifistrength",{
 
 	getDom: function() {
 		var wrapper = document.createElement("div");
-		wrapper.className = 'wrapper';
+		wrapper.className = "wrapper";
 
 		wrapper.style.width = this.config.size + "px";
 		wrapper.style.height = this.config.size + "px";
@@ -73,7 +73,7 @@ Module.register("wifistrength",{
 
 			this.show();
 		} else {
-			wrapper.innerText = '...';
+			wrapper.innerText = "...";
 			wrapper.style.backgroundPositionX = "200%";
 		}
 		return wrapper;

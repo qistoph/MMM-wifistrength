@@ -6,6 +6,9 @@
   "scripts": {
     "test": "grunt"
   },
+  "pre-commit": [
+	  "test"
+  ],
   "author": "Chris van Marle",
   "license": "ISC",
   "dependencies": {

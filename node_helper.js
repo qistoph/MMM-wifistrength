@@ -1,11 +1,9 @@
 var NodeHelper = require("node_helper");
-var iwconfig = require('wireless-tools/iwconfig');
+var iwconfig = require("wireless-tools/iwconfig");
 
 module.exports = NodeHelper.create({
 	// Override start method.
 	start: function() {
-		var self = this;
-		var events = [];
 		this.devices = [];
 
 		console.log("Starting node helper for: " + this.name);
@@ -20,12 +18,12 @@ module.exports = NodeHelper.create({
 	},
 
 	addWifiDevice: function(device, reloadInterval) {
-		fetcher = {
+		var fetcher = {
 			fetch: function() {
 				var self = this;
 				iwconfig.status(this.device, function(err, status) {
 					if (err !== null) {
-						self.module.sendSocketNotification('FETCH_ERROR', {
+						self.module.sendSocketNotification("FETCH_ERROR", {
 							device: self.device,
 							err: err
 						});

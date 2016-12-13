@@ -1,5 +1,5 @@
 .wifistrength .wrapper {
-	/*border: 1px solid red;*/
-	background-image: url("images/strength.png");
-	background-repeat: no-repeat;
+  /* border: 1px solid red; */
+  background-image: url("images/strength.png");
+  background-repeat: no-repeat;
 }
