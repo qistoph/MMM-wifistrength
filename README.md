@@ -5,6 +5,8 @@
 This is a module for [MagicMirror²](https://github.com/MichMich/MagicMirror) to
 show the strength of your WiFi signal.
 
+![Example Visualization](.previews/wifistrength.png)
+
 ## Installing the module
 
 To install the module, just clone this repository to your __modules__ folder and
