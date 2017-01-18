@@ -5,7 +5,7 @@
   "main": "test.js",
   "scripts": {
     "test": "grunt",
-	"precommit": "grunt precommit"
+    "precommit": "grunt precommit"
   },
   "pre-commit": [
     "precommit"
