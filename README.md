@@ -48,28 +48,8 @@ modules: [
 
 The following properties can be configured:
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th>Option</th>
-      <th width="100%">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>device</code></td>
-      <td>The wlan-interface to get the signal strength for.<br>
-      <br><b>Default value:</b> <code>wlan0</code></td>
-    </tr>
-    <tr>
-      <td><code>reloadInterval</code></td>
-      <td>Number of milliseconds between refresh.<br>
-      <br><b>Default value:</b> <code>120000</code> (2 minutes)</td>
-    </tr>
-    <tr>
-      <td><code>size</code></td>
-      <td>The size of the icon to show.<br>
-      <br><b>Default value:</b> <code>40</code></td>
-    </tr>
-  </tbody>
-</table>
+Option            | Description
+----------------- | ------------
+`device`          | The wlan-interface to get the signal strength for.<br>**Default value:** `wlan0`
+`realoadInterval` | Number of milliseconds between refresh.<br>**Default value:** `120000` (2 minutes)
+`size`            | The size of the icon to show.<br>**Default value:** `40`
