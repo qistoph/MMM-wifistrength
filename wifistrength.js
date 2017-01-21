@@ -70,8 +70,6 @@ Module.register("wifistrength",{
 				strength = 1;
 			}
 			wrapper.style.backgroundPositionX = (strength * 100 / 3) + "%"; 
-
-			this.show();
 		} else {
 			wrapper.innerText = "...";
 			wrapper.style.backgroundPositionX = "200%";
